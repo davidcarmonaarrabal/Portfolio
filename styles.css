@@ -55,12 +55,34 @@
         border-radius: 10px;
         padding: 10px;
         margin: 20px 0;
+        text-decoration: none;
+        transition: transform 0.3s ease, background-color 0.3s ease;
     }
     
     .work-item img {
         width: 150px;
         height: auto;
         border-radius: 10px;
+    }
+    
+    .work-item div {
+        color: #ffffff;
+    }
+    
+    .work-item h3 {
+        margin: 0;
+        transition: color 0.3s ease;
+    }
+    
+    /* Efecto al hacer hover */
+    .work-item:hover {
+        transform: scale(1.01);
+        background-color: #252525;
+        cursor: pointer;
+    }
+    
+    .work-item:hover h3 {
+        color: #ffcc00;
     }
     
 
@@ -70,5 +92,49 @@
         background-color: #1e1e1e;
         border-radius: 10px; 
     }
+
+    a {
+        color: #ffcc00  ;
+    }
+
+    #about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+        border-bottom: 1px solid #333;
+    }
+    
+    .about-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        max-width: 800px;
+    }
+    
+    .about-text {
+        flex: 1;
+    }
+    
+    #about img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    /* Responsivo */
+    @media (max-width: 768px) {
+        .about-container {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        #about img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+    
 
     
