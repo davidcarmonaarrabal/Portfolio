@@ -252,3 +252,10 @@ a {
 .contact-item:hover {
     transform: scale(1.1);
 }
+
+.about-text {
+    background-color: #121212;
+    padding: 2vh;
+    border-radius: 25px;
+    border: 2px solid #ffcc00;
+}
