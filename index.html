@@ -153,6 +153,7 @@
 
         <section id="contact">
             <h2>Contáctame</h2>
+            
             <div class="contact-container">
                 <div class="contact-item">
                     <img src="img/mail.png" alt="Email">
@@ -167,8 +168,19 @@
                     <p><a href="https://www.linkedin.com/in/david-carmona-arrabal-26731b212/" target="_blank">LinkedIn</a></p>
                 </div>
             </div>
-        </section>
         
+            <!-- Formulario de contacto -->
+            <div class="contact-form">
+                <h3>Envíame un mensaje</h3>
+                <form action="https://formspree.io/f/{tu-endpoint}" method="POST">
+                    <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                    <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                    <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        
+        </section>
 
         <footer>
             <p>&copy; 2025 Mi Portfolio. Todos los derechos reservados.</p>
