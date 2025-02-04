@@ -7,7 +7,7 @@ body {
 }
 
 html {
-    scroll-behavior: smooth; /* Desplazamiento suave */
+    scroll-behavior: smooth; 
 }
 
 header {
@@ -30,12 +30,12 @@ nav ul li a {
     color: #ffffff;
     text-decoration: none;
     padding: 10px 15px;
-    border-radius: 20px; /* Bordes redondeados */
-    transition: background-color 0.3s; /* Transición suave */
+    border-radius: 20px; 
+    transition: background-color 0.3s; 
 }
 
 nav ul li a:hover {
-    background-color: #ffcc00; /* Fondo amarillo al hacer hover */
+    background-color: #ffcc00; 
 }
 
 section {
@@ -51,12 +51,12 @@ h1, h2 {
     margin: 20px 0;
     padding: 10px;
     background-color: #1e1e1e;
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 10px; 
 }
 
 footer {
     text-align: center;
     padding: 20px;
     background-color: #1e1e1e;
-    border-radius: 10px; /* Bordes redondeados */
-}++++++++++++++++++++++++
+    border-radius: 10px; 
+}
