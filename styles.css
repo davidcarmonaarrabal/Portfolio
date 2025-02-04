@@ -204,4 +204,51 @@ a {
 .tech-item:hover {
     transform: scale(1.1);
 }
-    
+
+
+#contact {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #333;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.contact-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.contact-item a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.contact-item:hover {
+    transform: scale(1.1);
+}
