@@ -13,24 +13,24 @@ body {
     font-family: 'Lobster', cursive;
 }
 
-    .wrapper {
-        background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
-        background-size: cover;
-        background-position: center;
-        background-repeat: repeat;       
-        color: #eee;
-        width: 100%;
-        height: 100%;
-        perspective: 1000px;
-        perspective-origin: 50% 50%;
-        animation: animation 100s linear infinite;
-    }
+.wrapper {
+    background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    color: #eee;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animation 100s linear infinite;
+}
 
-    @keyframes animation {
-        100% {
-            background-position: 0px -3000px;
-        }
+@keyframes animation {
+    100% {
+        background-position: 0px -3000px;
     }
+}
 
 html {
     scroll-behavior: smooth;
@@ -162,3 +162,46 @@ a {
         height: 150px;
     }
 }
+
+#tech-stack {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #333;
+}
+
+.tech-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+
+.tech-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.tech-item p {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.tech-item:hover {
+    transform: scale(1.1);
+}
+    
