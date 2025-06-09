@@ -1,6 +1,6 @@
 import FadeIn from "../animations/fadeIn";
 
-const techs = ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Node.js'];
+const techs = ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Java', 'PostGreSQL', 'MySQL', 'Microsoft SQL', 'Laravel', 'Android', 'JavaFX', 'Neon.Tech', 'Hostinger', 'Sendgrid', 'Adobe Photoshop', 'Adobe Premiere', 'OBS', 'UpStash', 'Prisma', 'NextAuth', 'Odoo', 'Python', 'Odoo', 'CSS', 'Tailwind CSS', 'Git', 'GitHub', 'Vercel'];
 
 export default function Technologies() {
   return (
