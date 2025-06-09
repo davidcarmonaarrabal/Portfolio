@@ -2,15 +2,32 @@ import FadeIn from "../animations/fadeIn";
 
 export default function About() {
   return (
-    <section id="about" className="p-8 bg-gray-100">
+    <section id="about" className="py-20 px-6 bg-gray-100 dark:bg-gray-900">
       <FadeIn>
-        <h2 className="text-3xl font-bold mb-4">Sobre mí</h2>
-        <p className="text-lg max-w-3xl">
-          Soy un apasionado del desarrollo web con experiencia en tecnologías como React, Next.js y Tailwind CSS. Me encanta construir interfaces limpias, eficientes y bien diseñadas.
-          Con 21 años, siempre intentando aprender algo nuevo cada día, curioso por naturaleza y amante de la tecnología.
-          Amo el Backend y disfruto muchísimo investigar todas las posibilidades que tengo en el Frontend.
-          También siento cierta curiosidad sobre el desarrollo multiplataforma, habiendo interactuado con lenguajes como Java o Python en diferentes ocasiones.
-        </p>
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-6">
+            Sobre mí
+          </h2>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+            Soy un apasionado del desarrollo web con experiencia en tecnologías
+            como <strong>React</strong>, <strong>Next.js</strong> y{" "}
+            <strong>Tailwind CSS</strong>. Me encanta construir interfaces
+            limpias, eficientes y visualmente atractivas.
+          </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+            Tengo <strong>21 años</strong> y un gran interés por seguir
+            aprendiendo constantemente. Me considero una persona{" "}
+            <em>curiosa por naturaleza</em> y entusiasta de la tecnología.
+          </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+            Disfruto especialmente del <strong>desarrollo backend</strong>, aunque
+            también exploro el frontend para entender todo el ecosistema.
+            Además, he trabajado con lenguajes como <strong>Java</strong> y{" "}
+            <strong>Python</strong> en proyectos académicos y personales, lo
+            que ha despertado en mí el interés por el{" "}
+            <strong>desarrollo multiplataforma</strong>.
+          </p>
+        </div>
       </FadeIn>
     </section>
   );
