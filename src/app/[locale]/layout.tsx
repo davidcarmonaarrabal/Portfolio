@@ -1,3 +1,5 @@
+// src/app/[locale]/layout.tsx
+
 import '../globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
@@ -8,19 +10,19 @@ import { ThemeProvider } from 'next-themes';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
-  subsets: ['latin']
+  subsets: ['latin'],
 });
 
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
-  subsets: ['latin']
+  subsets: ['latin'],
 });
 
 type Locale = (typeof locales)[number];
 
 export const metadata = {
   title: 'David Carmona Arrabal',
-  description: 'Portfolio'
+  description: 'Portfolio',
 };
 
 export default async function LocaleLayout({
@@ -28,10 +30,9 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: Locale }> | { locale: Locale };
+  params: { locale: Locale };
 }) {
-  const resolvedParams = params instanceof Promise ? await params : params;
-  const locale = resolvedParams.locale;
+  const { locale } = params;
 
   if (!locales.includes(locale)) {
     notFound();
