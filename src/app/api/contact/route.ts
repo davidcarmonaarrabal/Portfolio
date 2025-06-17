@@ -17,8 +17,8 @@ export async function POST(request: Request) {
             subject: `Nuevo mensaje de contacto de ${name}`,
             text: `Nombre: ${name}\nEmail: ${email}\nMensaje:\n${message}`,
             html: `<p><strong>Nombre:</strong> ${name}</p>
-             <p><strong>Email:</strong> ${email}</p>
-             <p><strong>Mensaje:</strong><br/>${message}</p>`,
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Mensaje:</strong><br/>${message}</p>`,
         };
 
         await sgMail.send(msg);
