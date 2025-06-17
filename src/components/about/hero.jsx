@@ -1,9 +1,14 @@
+'use client';
+
 import Image from "next/image";
 import FadeIn from "../animations/fadeIn";
 import LanguageSwitcher from "../animations/languageSwitcher";
 import { ThemeToggle } from "@/app/theme-toggle";
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
+    const t = useTranslations('hero');
+
     return (
         <section
             id="hero"
@@ -16,7 +21,7 @@ export default function Hero() {
                     <ThemeToggle />
                 </div>
 
-                {/* Foto + nombre */}
+                {/* Foto */}
                 <div className="mb-8">
                     <Image
                         src="/img/me.jpeg"
@@ -29,17 +34,11 @@ export default function Hero() {
 
                 {/* Nombre + descripción */}
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-gray-800 dark:text-white mb-4">
-                    ¡Hola! Soy{" "}
-                    <span className="text-blue-600 dark:text-blue-400">
-                        David Carmona Arrabal
-                    </span>
+                    {t('greeting')}
                 </h1>
 
                 <p className="text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-3xl leading-relaxed">
-                    Desarrollador web apasionado por crear experiencias modernas, rápidas
-                    y accesibles usando tecnologías como{" "}
-                    <strong>Next.js</strong>, <strong>React</strong>,{" "}
-                    <strong>TypeScript</strong> y más.
+                    {t('description')}
                 </p>
             </FadeIn>
         </section>
