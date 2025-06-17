@@ -28,12 +28,14 @@ export const metadata = {
 
 export default async function LocaleLayout({
   children,
-  params
+  params,
 }: {
   children: React.ReactNode;
-  params: { locale: Locale }; // 👈 tipo correcto aquí
+  params: Promise<{ locale: 'es' | 'en' }> | { locale: 'es' | 'en' }; // acepta Promise o objeto normal
 }) {
-  const { locale } = params;
+  // Resuelve params si es Promise
+  const resolvedParams = params instanceof Promise ? await params : params;
+  const locale = resolvedParams.locale;
 
   if (!locales.includes(locale)) {
     notFound();
@@ -53,3 +55,4 @@ export default async function LocaleLayout({
     </html>
   );
 }
+
