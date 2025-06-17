@@ -1,6 +1,57 @@
 {
-  "hero": {
-    "greeting": "¡Hola! Soy David Carmona Arrabal",
-    "description": "Desarrollador web apasionado por crear experiencias modernas, rápidas y accesibles usando tecnologías como Next.js, React, TypeScript y más."
-  }
+    "hero": {
+        "greeting": "¡Hola! Soy David Carmona Arrabal",
+        "description": "Desarrollador web apasionado por crear experiencias modernas, rápidas y accesibles usando tecnologías como Next.js, React, TypeScript y más."
+    },
+    "about": {
+        "title": "Sobre mí",
+        "paragraph1": "Soy un apasionado del desarrollo web con experiencia en tecnologías como {tech}. Me encanta construir interfaces limpias, eficientes y visualmente atractivas.",
+        "paragraph2": "Tengo {age} y un gran interés por seguir aprendiendo constantemente. Me considero una persona {curious} y entusiasta de la tecnología.",
+        "paragraph3": "Disfruto especialmente del {backend}, aunque también exploro el frontend para entender todo el ecosistema. Además, he trabajado con lenguajes como {java} y {python}, lo que ha despertado en mí el interés por el {cross}."
+    },
+    "projects": {
+        "title": "Mis proyectos",
+        "items": [
+            {
+                "title": "Portfolio",
+                "description": "EN DESARROLLO. Mi web personal creada con Next.js y Tailwind. Busca mostrar todos mis proyectos, trabajos, exponer mi pasión por la programación en primer plano."
+            },
+            {
+                "title": "TCGShopFinder",
+                "description": "EN DESARROLLO. Web de reseñas de tiendas de TCG en toda España, hecha con Next.js, React y Tailwind CSS. Permite al usuario crear reseñas de tiendas, ver reseñas, solicitar la adición de nuevas tiendas, todo esto optando por un diseño atractivo, minimalista, y simple, pero acompañado de un motor de búsqueda bastante potente."
+            },
+            {
+                "title": "Un Viaje a Egipto",
+                "description": "Minijuego de parejas de cartas con la temática de JoJo's Bizarre Adventure y las cartas del Tarot. Hecho con JavaScript y HTML5 planos, acompañado de CSS, un pequeño proyecto de clase."
+            },
+            {
+                "title": "PNGMaker",
+                "description": "Aplicación de Java sencilla enfocada en pasarle un conjunto de imágenes con bordes blancos que quieras pasar a PNG. Se buscaba una herramienta para convertir decenas de imágenes con bordes en blanco en PNG de forma sencilla y parametrizable."
+            },
+            {
+                "title": "Mechanichal Keyboards Fun",
+                "description": "EN DESARROLLO. Web en la que muestro los teclados mecánicos que uso, enseño cosas sobre ellos, etc. En la web se busca exponer los teclados que he montado, los que recomiendo, aportar un tester de teclados, etc."
+            }
+        ]
+    },
+    "technologies": {
+        "title": "Tecnologías",
+        "groups": {
+            "Lenguajes": "Lenguajes",
+            "Frameworks": "Frameworks",
+            "Herramientas": "Herramientas",
+            "Otros": "Otros"
+        }
+    },
+    "otherWork": {
+        "title": "Otros trabajos",
+        "description": "He colaborado en proyectos freelance, desarrollo de plugins y contribuciones a comunidades open-source. Siempre estoy abierto a nuevas oportunidades creativas."
+    },
+    "contact": {
+        "title": "Contáctame",
+        "name": "Nombre",
+        "email": "Email",
+        "message": "Mensaje",
+        "send": "Enviar mensaje"
+    }
 }

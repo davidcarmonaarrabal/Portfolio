@@ -1,10 +1,11 @@
+import '../globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { locales } from '@/i18n/routing'; // ← ¡importa los locales válidos!
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { ThemeProvider } from 'next-themes';
-import '../globals.css';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -28,11 +29,12 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const messages = await getMessages({ locale });
-
-  if (!messages) {
+  // ✅ Verifica que el locale es válido
+  if (!locales.includes(locale as any)) {
     notFound();
   }
+
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale} suppressHydrationWarning>

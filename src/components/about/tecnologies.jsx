@@ -1,5 +1,8 @@
+'use client';
+
 import Image from "next/image";
 import FadeIn from "../animations/fadeIn";
+import { useTranslations } from "next-intl";
 
 const technologies = [
   { name: "TypeScript", url: "https://www.typescriptlang.org/", image: "/img/techs/typescript.png", category: "Lenguajes" },
@@ -39,21 +42,27 @@ const technologies = [
   { name: "OBS", url: "https://obsproject.com/", image: "/img/techs/obs.png", category: "Otros" },
   { name: "EDIUS", url: "https://www.edius.es/", image: "/img/techs/edius.png", category: "Otros" },
   { name: "VMIX", url: "https://www.vmix.com/", image: "/img/techs/vmix.png", category: "Otros" },
-  { name: "Sony Vegas", url: "https://www.vegascreativesoftware.com/es/vegas-pro/", image: "/img/techs/vegas.png", category: "Otros" },
+  { name: "Sony Vegas", url: "https://www.vegascreativesoftware.com/es/vegas-pro/", image: "/img/techs/vegas.png", category: "Otros" }
 ];
 
 const grouped = ["Lenguajes", "Frameworks", "Herramientas", "Otros"];
 
 export default function Technologies() {
+  const t = useTranslations("technologies");
+
   return (
     <section id="technologies" className="py-20 px-6 bg-white dark:bg-gray-900">
       <FadeIn>
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-800 dark:text-white mb-12">Tecnologías</h2>
+          <h2 className="text-4xl font-bold text-center text-gray-800 dark:text-white mb-12">
+            {t("title")}
+          </h2>
 
           {grouped.map((group) => (
             <div key={group} className="mb-10">
-              <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-200 mb-6">{group}</h3>
+              <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-200 mb-6">
+                {t(`groups.${group}`)}
+              </h3>
               <div className="flex flex-wrap gap-4">
                 {technologies
                   .filter((tech) => tech.category === group)
@@ -75,7 +84,6 @@ export default function Technologies() {
                         />
                       </div>
                     </a>
-
                   ))}
               </div>
             </div>

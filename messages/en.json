@@ -1,6 +1,57 @@
 {
-  "hero": {
-    "greeting": "Hi! I'm David Carmona Arrabal",
-    "description": "Web developer passionate about creating modern, fast, and accessible experiences using technologies like Next.js, React, TypeScript and more."
-  }
+    "hero": {
+        "greeting": "Hi! I'm David Carmona Arrabal",
+        "description": "Web developer passionate about creating modern, fast and accessible experiences using technologies like Next.js, React, TypeScript and more."
+    },
+    "about": {
+        "title": "About Me",
+        "paragraph1": "I'm a passionate web developer with experience in technologies like {tech}. I love building clean, efficient, and visually appealing interfaces.",
+        "paragraph2": "I'm {age} and always eager to keep learning. I'm naturally {curious} and enthusiastic about technology.",
+        "paragraph3": "I particularly enjoy {backend}, although I also explore frontend to understand the full ecosystem. I've also worked with languages like {java} and {python}, which sparked my interest in {cross}."
+    },
+    "projects": {
+        "title": "My Projects",
+        "items": [
+            {
+                "title": "Portfolio",
+                "description": "IN DEVELOPMENT. My personal website built with Next.js and Tailwind. It showcases my projects, work, and puts my passion for programming front and center."
+            },
+            {
+                "title": "TCGShopFinder",
+                "description": "IN DEVELOPMENT. Review site for TCG stores across Spain, built with Next.js, React and Tailwind CSS. Users can leave reviews, request new stores, and enjoy a minimal and powerful search experience."
+            },
+            {
+                "title": "A Journey to Egypt",
+                "description": "Card matching mini-game themed around JoJo's Bizarre Adventure and the Tarot. Created with vanilla JavaScript, HTML5, and CSS as a small class project."
+            },
+            {
+                "title": "PNGMaker",
+                "description": "Simple Java application to convert images with white borders to transparent PNGs. Designed to batch-process images easily with customizable settings."
+            },
+            {
+                "title": "Mechanical Keyboards Fun",
+                "description": "IN DEVELOPMENT. Website showcasing my mechanical keyboards, builds, recommendations, and a keyboard tester – all with a fun, techy vibe."
+            }
+        ]
+    },
+    "technologies": {
+        "title": "Technologies",
+        "groups": {
+            "Lenguajes": "Languages",
+            "Frameworks": "Frameworks",
+            "Herramientas": "Tools",
+            "Otros": "Others"
+        }
+    },
+    "otherWork": {
+        "title": "Other Work",
+        "description": "I’ve collaborated on freelance projects, plugin development, and contributed to open-source communities. I’m always open to new creative opportunities."
+    },
+    "contact": {
+        "title": "Contact Me",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send Message"
+    }
 }
