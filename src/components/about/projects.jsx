@@ -13,7 +13,7 @@ const projects = [
     description:
       "Web de reseñas de tiendas de TCG en toda España, hecha con Next.js, React y Tailwind CSS.",
     url: "https://tcgshopfinder.es",
-    image: "/img/tcgshopfinder.png",
+    image: "/img/LOGO_TCG-04.png",
   },
   {
     title: "Un Viaje a Egipto",
@@ -60,7 +60,7 @@ export default function Projects() {
                     src={proj.image}
                     alt={`Imagen de ${proj.title}`}
                     fill
-                    className="object-cover"
+                    className="object-contain"
                     sizes="(min-width: 768px) 50vw, 100vw"
                     priority={i === 0}
                   />
