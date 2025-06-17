@@ -4,35 +4,35 @@ import FadeIn from "../animations/fadeIn";
 const projects = [
   {
     title: "Portfolio",
-    description: "Mi web personal creada con Next.js y Tailwind.",
+    description: "EN DESARROLLO. Mi web personal creada con Next.js y Tailwind. Busca mostrar todos mis proyectos, trabajos, exponer mi pasión por la programación en primer plano.",
     url: "https://davidca.es",
     image: "/img/portfolio.png",
   },
   {
     title: "TCGShopFinder",
     description:
-      "Web de reseñas de tiendas de TCG en toda España, hecha con Next.js, React y Tailwind CSS.",
+      "EN DESARROLLO. Web de reseñas de tiendas de TCG en toda España, hecha con Next.js, React y Tailwind CSS. Permite al usuario crear reseñas de tiendas, ver reseñas, solicitar la adición de nuevas tiendas, todo esto optando por un diseño atractivo, minimalista, y simple, pero acompañado de un motor de búsqueda bastante potente.",
     url: "https://tcgshopfinder.es",
     image: "/img/LOGO_TCG-04.png",
   },
   {
     title: "Un Viaje a Egipto",
     description:
-      "Minijuego de parejas de cartas con la temática de JoJo's Bizarre Adventure y las cartas del Tarot",
+      "Minijuego de parejas de cartas con la temática de JoJo's Bizarre Adventure y las cartas del Tarot. Hecho con JavaScript y HTML5 planos, acompañado de CSS, un pequeño proyecto de clase.",
     url: "https://github.com/davidcarmonaarrabal/JuegoCartasMemoria",
     image: "/img/egipto.png",
   },
   {
     title: "PNGMaker",
     description:
-      "Aplicación de Java sencilla enfocada en pasarle un conjunto de imágenes con bordes blancos que quieras pasar a PNG.",
+      "Aplicación de Java sencilla enfocada en pasarle un conjunto de imágenes con bordes blancos que quieras pasar a PNG. Se buscaba una herramienta para convertir decenas de imágenes con bordes en blanco en PNG de forma sencilla y parametrizable.",
     url: "https://github.com/davidcarmonaarrabal/CardPNGMaker",
     image: "/img/pngmaker.png",
   },
   {
     title: "Mechanichal Keyboards Fun",
     description:
-      "EN DESARROLLO. Web en la que muestro los teclados mecánicos que uso, enseño cosas sobre ellos, etc.",
+      "EN DESARROLLO. Web en la que muestro los teclados mecánicos que uso, enseño cosas sobre ellos, etc. En la web se busca exponer los teclados que he montado, los que recomiendo, aportar un tester de teclados, etc.",
     url: "https://github.com/davidcarmonaarrabal/KBFSilversoul",
     image: "/img/KBF.png",
   },
