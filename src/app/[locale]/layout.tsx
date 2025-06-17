@@ -1,5 +1,3 @@
-// src/app/[locale]/layout.tsx
-
 import '../globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
@@ -18,7 +16,6 @@ const geistMono = Geist_Mono({
   subsets: ['latin']
 });
 
-// 👇 define un tipo basado en tus locales
 type Locale = (typeof locales)[number];
 
 export const metadata = {
@@ -31,9 +28,8 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: 'es' | 'en' }> | { locale: 'es' | 'en' }; // acepta Promise o objeto normal
+  params: Promise<{ locale: Locale }> | { locale: Locale };
 }) {
-  // Resuelve params si es Promise
   const resolvedParams = params instanceof Promise ? await params : params;
   const locale = resolvedParams.locale;
 
@@ -55,4 +51,3 @@ export default async function LocaleLayout({
     </html>
   );
 }
-
