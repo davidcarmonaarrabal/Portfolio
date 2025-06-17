@@ -1,9 +1,10 @@
+// src/app/[locale]/layout.tsx
+
 import '../globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { locales } from '@/i18n/routing'; // ← ¡importa los locales válidos!
-import type { Metadata } from 'next';
+import { locales } from '@/i18n/routing';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { ThemeProvider } from 'next-themes';
 
@@ -17,20 +18,24 @@ const geistMono = Geist_Mono({
   subsets: ['latin']
 });
 
-export const metadata: Metadata = {
+// 👇 define un tipo basado en tus locales
+type Locale = (typeof locales)[number];
+
+export const metadata = {
   title: 'David Carmona Arrabal',
   description: 'Portfolio'
 };
 
 export default async function LocaleLayout({
   children,
-  params: { locale }
+  params
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: { locale: Locale }; // 👈 tipo correcto aquí
 }) {
-  // ✅ Verifica que el locale es válido
-  if (!locales.includes(locale as any)) {
+  const { locale } = params;
+
+  if (!locales.includes(locale)) {
     notFound();
   }
 
