@@ -63,7 +63,7 @@ export default function Technologies() {
                       href={tech.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-20 h-20 p-2 bg-gray-100 dark:bg-gray-800 rounded-lg shadow hover:shadow-md transition flex items-center justify-center"
+                      className="w-20 h-20 p-2 bg-gray-100 dark:bg-gray-400 rounded-lg shadow hover:shadow-md transition flex items-center justify-center"
                       title={tech.name}
                     >
                       <div className="relative w-14 h-14">
