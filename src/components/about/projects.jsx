@@ -18,7 +18,7 @@ export default function Projects() {
       title: t('items.1.title'),
       description: t('items.1.description'),
       url: "https://tcgshopfinder.es",
-      image: "/img/LOGO_TCG-04.png",
+      image: "/img/LOGO_TCG-04.svg",
     },
     {
       title: t('items.2.title'),
