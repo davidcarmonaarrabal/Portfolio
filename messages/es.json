@@ -5,9 +5,9 @@
     },
     "about": {
         "title": "Sobre mí",
-        "paragraph1": "Soy un apasionado del desarrollo web con experiencia en tecnologías como {tech}. Me encanta construir interfaces limpias, eficientes y visualmente atractivas.",
-        "paragraph2": "Tengo {age} y un gran interés por seguir aprendiendo constantemente. Me considero una persona {curious} y entusiasta de la tecnología.",
-        "paragraph3": "Disfruto especialmente del {backend}, aunque también exploro el frontend para entender todo el ecosistema. Además, he trabajado con lenguajes como {java} y {python}, lo que ha despertado en mí el interés por el {cross}."
+        "paragraph1": "Soy un apasionado del desarrollo web con experiencia en tecnologías como TypeScript, JavaScript o Java. Me encanta construir interfaces limpias, eficientes y visualmente atractivas.",
+        "paragraph2": "Tengo 22 años y un gran interés por seguir aprendiendo constantemente. Me considero una persona curiosa y entusiasta de la tecnología.",
+        "paragraph3": "Disfruto especialmente del backend, aunque también exploro el frontend para entender todo el ecosistema. Además, he trabajado con lenguajes como Java y Python, lo que ha despertado en mí el interés por el desarrollo multiplataforma."
     },
     "projects": {
         "title": "Mis proyectos",

@@ -5,9 +5,9 @@
     },
     "about": {
         "title": "About Me",
-        "paragraph1": "I'm a passionate web developer with experience in technologies like {tech}. I love building clean, efficient, and visually appealing interfaces.",
-        "paragraph2": "I'm {age} and always eager to keep learning. I'm naturally {curious} and enthusiastic about technology.",
-        "paragraph3": "I particularly enjoy {backend}, although I also explore frontend to understand the full ecosystem. I've also worked with languages like {java} and {python}, which sparked my interest in {cross}."
+        "paragraph1": "I'm a passionate web developer with experience in technologies like TypeScript, JavaScript or Java. I love building clean, efficient, and visually appealing interfaces.",
+        "paragraph2": "I'm 22 years old and always eager to keep learning. I'm naturally curious and enthusiastic about technology.",
+        "paragraph3": "I particularly enjoy backend, although I also explore frontend to understand the full ecosystem. I've also worked with languages like Java and Python, which sparked my interest in cross plataform development."
     },
     "projects": {
         "title": "My Projects",
