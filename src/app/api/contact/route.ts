@@ -12,8 +12,8 @@ export async function POST(request: Request) {
         }
 
         const msg = {
-            to: 'davidcarmonaarrabal@davidca.es', // Cambia esto por tu email
-            from: 'davidcarmonaarrabal@davidca.es', // Debe ser un remitente verificado en SendGrid
+            to: 'davidcarmonaarrabal@davidca.es', 
+            from: 'davidcarmonaarrabal@davidca.es', 
             subject: `Nuevo mensaje de contacto de ${name}`,
             text: `Nombre: ${name}\nEmail: ${email}\nMensaje:\n${message}`,
             html: `<p><strong>Nombre:</strong> ${name}</p>

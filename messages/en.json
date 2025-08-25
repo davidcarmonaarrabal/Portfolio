@@ -14,23 +14,27 @@
         "items": [
             {
                 "title": "Portfolio",
-                "description": "IN DEVELOPMENT. My personal website built with Next.js and Tailwind. It showcases my projects, work, and puts my passion for programming front and center."
+                "description": "COMPLETED. My personal website built with Next.js and Tailwind. It showcases my projects, work, and puts my passion for programming front and center."
             },
             {
                 "title": "TCGShopFinder",
-                "description": "IN DEVELOPMENT. Review site for TCG stores across Spain, built with Next.js, React and Tailwind CSS. Users can leave reviews, request new stores, and enjoy a minimal and powerful search experience."
+                "description": "ON HOLD. IN DEVELOPMENT. Review site for TCG stores across Spain, built with Next.js, React, and Tailwind CSS. Users can leave reviews, view others, request new stores, all with a minimal yet powerful search experience."
             },
             {
                 "title": "A Journey to Egypt",
-                "description": "Card matching mini-game themed around JoJo's Bizarre Adventure and the Tarot. Created with vanilla JavaScript, HTML5, and CSS as a small class project."
+                "description": "COMPLETED. Card matching mini-game themed around JoJo's Bizarre Adventure and the Tarot. Created with vanilla JavaScript, HTML5, and CSS as a small class project."
             },
             {
                 "title": "PNGMaker",
-                "description": "Simple Java application to convert images with white borders to transparent PNGs. Designed to batch-process images easily with customizable settings."
+                "description": "COMPLETED. Simple Java application to convert images with white borders to transparent PNGs. Designed to batch-process images easily with customizable settings."
             },
             {
                 "title": "Mechanical Keyboards Fun",
-                "description": "IN DEVELOPMENT. Website showcasing my mechanical keyboards, builds, recommendations, and a keyboard tester – all with a fun, techy vibe."
+                "description": "ON HOLD. IN DEVELOPMENT. Website showcasing my mechanical keyboards, builds, recommendations, and a keyboard tester – all with a fun, techy vibe."
+            },
+            {
+                "title": "UNDERTALE/DELTARUNE Sprites Repository",
+                "description": "IN DEVELOPMENT. Website collecting all sprites from UNDERTALE and DELTARUNE, organized by characters, areas, and games, allowing easy browsing and downloads through a clean interface."
             }
         ]
     },

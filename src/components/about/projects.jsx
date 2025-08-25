@@ -38,6 +38,12 @@ export default function Projects() {
       url: "https://github.com/davidcarmonaarrabal/KBFSilversoul",
       image: "/img/KBF.png",
     },
+    {
+      title: t('items.5.title'),
+      description: t('items.5.description'),
+      url: "https://github.com/davidcarmonaarrabal/UTDRSpriteWeb",
+      image: "/img/Undertale.png",
+    },
   ];
 
   return (
