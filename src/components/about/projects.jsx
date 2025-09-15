@@ -21,6 +21,12 @@ export default function Projects() {
       image: "/img/LOGO_TCG-04.svg",
     },
     {
+      title: t('items.5.title'),
+      description: t('items.5.description'),
+      url: "https://github.com/davidcarmonaarrabal/UTDRSpriteWeb",
+      image: "/img/Undertale.png",
+    },
+    {
       title: t('items.2.title'),
       description: t('items.2.description'),
       url: "https://github.com/davidcarmonaarrabal/JuegoCartasMemoria",
@@ -38,12 +44,6 @@ export default function Projects() {
       url: "https://github.com/davidcarmonaarrabal/KBFSilversoul",
       image: "/img/KBF.png",
     },
-    {
-      title: t('items.5.title'),
-      description: t('items.5.description'),
-      url: "https://github.com/davidcarmonaarrabal/UTDRSpriteWeb",
-      image: "/img/Undertale.png",
-    },
   ];
 
   return (
@@ -56,7 +56,7 @@ export default function Projects() {
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((proj, i) => (
               <a
-                key={i}
+                key={i} 
                 href={proj.url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -68,13 +68,13 @@ export default function Projects() {
                     alt={`Imagen de ${proj.title}`}
                     fill
                     className="object-contain"
-                    sizes="(min-width: 768px) 50vw, 100vw"
+                    sizes="(min-width: 768px ) 50vw, 100vw"
                     priority={i === 0}
                   />
-                </div>
+                </div>  
                 <div className="p-6">
                   <h3 className="text-2xl font-semibold mb-2 text-blue-600 dark:text-blue-400">
-                    {proj.title}
+                    {proj.title} 
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300">
                     {proj.description}
@@ -82,7 +82,7 @@ export default function Projects() {
                 </div>
               </a>
             ))}
-          </div>
+          </div> 
         </div>
       </FadeIn>
     </section>
