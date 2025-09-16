@@ -35,7 +35,7 @@ export default function About() {
             })}
           </p>
         </div>
-      </FadeIn>
+      </FadeIn> 
     </section>
   );
 }

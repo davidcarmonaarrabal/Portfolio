@@ -56,7 +56,7 @@ export default function Projects() {
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((proj, i) => (
               <a
-                key={i} 
+                key={i}
                 href={proj.url}
                 target="_blank"
                 rel="noopener noreferrer"
