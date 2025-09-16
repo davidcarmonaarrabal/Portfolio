@@ -23,7 +23,7 @@ export default function Projects() {
     {
       title: t('items.5.title'),
       description: t('items.5.description'),
-      url: "https://github.com/davidcarmonaarrabal/UTDRSpriteWeb",
+      url: "https://www.utdrsprites.xyz/",
       image: "/img/Undertale.png",
     },
     {
