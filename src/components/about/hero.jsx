@@ -15,7 +15,6 @@ export default function Hero() {
             className="min-h-screen flex flex-col justify-center items-center px-4 bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-black text-center"
         >
             <FadeIn>
-                {/* Barra superior con idioma y tema */}
                 <div className="w-full flex justify-end items-center gap-4 mb-6 max-w-5xl">
                     <LanguageSwitcher />
                     <ThemeToggle />
@@ -32,7 +31,6 @@ export default function Hero() {
                     />
                 </div>
 
-                {/* Nombre + descripción */}
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-gray-800 dark:text-white mb-4">
                     {t('greeting')}
                 </h1>

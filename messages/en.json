@@ -14,7 +14,7 @@
         "items": [
             {
                 "title": "Portfolio",
-                "description": "COMPLETED. My personal website built with Next.js and Tailwind. It showcases my projects, work, and puts my passion for programming front and center."
+                "description": "COMPLETED. My personal website built with Next.js and Tailwind CSS. It showcases my projects, work, and puts my passion for programming front and center."
             },
             {
                 "title": "TCGShopFinder",
@@ -34,7 +34,7 @@
             },
             {
                 "title": "UNDERTALE/DELTARUNE Sprites Repository",
-                "description": "COMPLETED. Website collecting all sprites from UNDERTALE and DELTARUNE, organized by characters, areas, and games, allowing easy browsing and downloads through a clean interface."
+                "description": "COMPLETED. Website collecting all sprites from UNDERTALE and DELTARUNE, organized by characters, areas, and games, allowing easy browsing and downloads through a clean interface. Built with Next.js and Tailwind CSS."
             }
         ]
     },
