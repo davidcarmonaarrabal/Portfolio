@@ -63,18 +63,20 @@ export default function Projects() {
                 className="block bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition hover:scale-[1.02]"
               >
                 <div className="relative w-full aspect-[4/3]">
-                  <Image
+                  <img
                     src={proj.image}
                     alt={`Imagen de ${proj.title}`}
-                    fill
                     className="object-contain"
-                    sizes="(min-width: 768px ) 50vw, 100vw"
-                    priority={i === 0}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "contain",
+                    }}
                   />
-                </div>  
+                </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-semibold mb-2 text-blue-600 dark:text-blue-400">
-                    {proj.title} 
+                    {proj.title}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300">
                     {proj.description}
@@ -82,7 +84,7 @@ export default function Projects() {
                 </div>
               </a>
             ))}
-          </div> 
+          </div>
         </div>
       </FadeIn>
     </section>

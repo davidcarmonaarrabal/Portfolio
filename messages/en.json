@@ -24,7 +24,7 @@
                 "title": "A Journey to Egypt",
                 "description": "COMPLETED. Card matching mini-game themed around JoJo's Bizarre Adventure and the Tarot. Created with vanilla JavaScript, HTML5, and CSS as a small class project."
             },
-            {
+            {   
                 "title": "PNGMaker",
                 "description": "COMPLETED. Simple Java application to convert images with white borders to transparent PNGs. Designed to batch-process images easily with customizable settings."
             },

@@ -22,13 +22,14 @@ export default function Hero() {
 
                 {/* Foto */}
                 <div className="mb-8">
-                    <Image
+                    <img
                         src="/img/me.jpeg"
                         alt="Foto de David Carmona Arrabal"
                         width={160}
                         height={160}
                         className="rounded-full border-4 border-blue-600 dark:border-blue-400 shadow-xl mx-auto"
                     />
+
                 </div>
 
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-gray-800 dark:text-white mb-4">
@@ -41,4 +42,4 @@ export default function Hero() {
             </FadeIn>
         </section>
     );
-}
+}   

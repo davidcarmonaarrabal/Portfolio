@@ -76,11 +76,11 @@ export default function Technologies() {
                       title={tech.name}
                     >
                       <div className="relative w-14 h-14">
-                        <Image
+                        <img
                           src={tech.image}
                           alt={tech.name}
-                          fill
                           className="object-contain"
+                          style={{ width: "100%", height: "100%", objectFit: "contain" }}
                         />
                       </div>
                     </a>
