@@ -25,27 +25,43 @@ export const metadata = {
   description: 'Portfolio',
 };
 
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
 export default async function LocaleLayout({
   children,
   params,
 }: {
-  children: React.ReactNode;  
-  params: Promise<{ locale: Locale }>;
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
-  const resolvedParams = await params;
-  const locale = resolvedParams.locale; 
+  const { locale } = await params;
 
-  if (!locales.includes(locale)) {
+  if (!locales.includes(locale as Locale)) {
     notFound();
   }
 
-  const messages = await getMessages({ locale });
-  
-  return (  
-    <html lang={locale} suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ThemeProvider attribute="class" enableSystem defaultTheme="system">
-          <NextIntlClientProvider locale={locale} messages={messages}>
+  const validatedLocale = locale as Locale;
+
+  const messages = await getMessages({
+    locale: validatedLocale,
+  });
+
+  return (
+    <html lang={validatedLocale} suppressHydrationWarning>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <ThemeProvider
+          attribute="class"
+          enableSystem
+          defaultTheme="system"
+        >
+          <NextIntlClientProvider
+            locale={validatedLocale}
+            messages={messages}
+          >
             {children}
           </NextIntlClientProvider>
         </ThemeProvider>
@@ -53,4 +69,3 @@ export default async function LocaleLayout({
     </html>
   );
 }
-  
