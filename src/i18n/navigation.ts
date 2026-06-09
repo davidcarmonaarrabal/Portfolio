@@ -9,5 +9,5 @@ export const {
 } = createNavigation({
   locales: ['es', 'en'],
   defaultLocale: 'es',
-  localePrefix: 'as-needed' // o 'always' si prefieres que siempre aparezca /es, /en en la URL
+  localePrefix: 'as-needed' 
 });

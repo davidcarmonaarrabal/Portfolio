@@ -29,19 +29,19 @@ export default async function LocaleLayout({
   children,
   params,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode;  
   params: Promise<{ locale: Locale }>;
 }) {
   const resolvedParams = await params;
-  const locale = resolvedParams.locale;
+  const locale = resolvedParams.locale; 
 
   if (!locales.includes(locale)) {
     notFound();
   }
 
   const messages = await getMessages({ locale });
-
-  return (
+  
+  return (  
     <html lang={locale} suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
@@ -53,3 +53,4 @@ export default async function LocaleLayout({
     </html>
   );
 }
+  
