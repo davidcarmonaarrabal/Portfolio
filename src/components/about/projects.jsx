@@ -9,6 +9,12 @@ export default function Projects() {
 
   const projects = [
     {
+      title: t('items.5.title'),
+      description: t('items.5.description'),
+      url: 'https://creame3d.es',
+      image: '/img/creame3d.png',
+    },
+    {
       title: t('items.0.title'),
       description: t('items.0.description'),
       url: 'https://davidca.es',
@@ -21,8 +27,8 @@ export default function Projects() {
       image: '/img/LOGO_TCG-04.svg',
     },
     {
-      title: t('items.5.title'),
-      description: t('items.5.description'),
+      title: t('items.4.title'),
+      description: t('items.4.description'),
       url: 'https://www.utdrsprites.xyz/',
       image: '/img/Undertale.png',
     },

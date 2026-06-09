@@ -33,7 +33,7 @@
                 "description": "Website collecting all sprites from UNDERTALE and DELTARUNE, organized by characters, areas, and games, allowing easy browsing and downloads through a clean interface. Built with Next.js and Tailwind CSS."
             },
             {
-                "title": "Crea-me 3D"
+                "title": "Crea-me 3D",
                 "description": "A personal 3D printing project. The website serves as a portfolio, showcasing our work in the field and providing tools for client communication and contact."
             }
         ]
